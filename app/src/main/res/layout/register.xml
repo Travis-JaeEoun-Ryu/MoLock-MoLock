@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/textView_main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="95dp"
+        android:text="비밀번호를 설정해주세요."
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editText_main_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/editText_main_name"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btn_design"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_main_name"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_main_add"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/btn_design2"
+        android:text="확 인"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_main_result"
+        app:layout_constraintTop_toBottomOf="@+id/textView_main_result"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_main_result"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="66dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_main_name"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
